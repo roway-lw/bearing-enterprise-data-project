@@ -1,0 +1,165 @@
+{
+  "enterprise_info": {
+    "enterprise_name": "河北宝鑫轴承制造有限责任公司",
+    "enterprise_short_name": "河北宝鑫轴承制造",
+    "industry_segment": "滚动轴承制造/轴承零部件制造",
+    "data_source": "天眼查、政府公示平台",
+    "tag_confidence": 0.9,
+    "tag_generate_time": "2026-05-17 14:07:55"
+  },
+  "tag_system": {
+    "产品标签": {
+      "核心产品类型": [
+        {
+          "tag": "钢球",
+          "source_field": "core_products",
+          "confidence": 0.95
+        },
+        {
+          "tag": "滚子",
+          "source_field": "core_products",
+          "confidence": 0.95
+        }
+      ],
+      "产品规格标签": [
+        {
+          "tag": "产品规格-未明确",
+          "source_field": "product_spec",
+          "confidence": 0.0
+        }
+      ],
+      "产品应用场景": [
+        {
+          "tag": "应用场景-未明确",
+          "source_field": "cooperative_enterprise",
+          "confidence": 0.0
+        }
+      ],
+      "产品合规标签": [
+        {
+          "tag": "合规认证-未明确",
+          "source_field": "industry_cert",
+          "confidence": 0.0
+        }
+      ]
+    },
+    "服务标签": {
+      "核心服务类型": [
+        {
+          "tag": "服务类型-未明确",
+          "source_field": "business_scope",
+          "confidence": 0.0
+        }
+      ],
+      "合作模式标签": [
+        {
+          "tag": "招投标合作",
+          "source_field": "cooperative_enterprise",
+          "confidence": 0.88
+        },
+        {
+          "tag": "批量供货",
+          "source_field": "cooperative_enterprise",
+          "confidence": 0.88
+        },
+        {
+          "tag": "供应链配套",
+          "source_field": "cooperative_enterprise",
+          "confidence": 0.88
+        }
+      ],
+      "服务覆盖范围": [
+        {
+          "tag": "全国",
+          "source_field": "cooperative_enterprise",
+          "confidence": 0.85
+        }
+      ],
+      "增值服务标签": [
+        {
+          "tag": "增值服务-未明确",
+          "source_field": "business_scope",
+          "confidence": 0.0
+        }
+      ]
+    },
+    "能力标签": {
+      "技术能力标签": [
+        {
+          "tag": "技术能力-未明确",
+          "source_field": "patent_count",
+          "confidence": 0.0
+        }
+      ],
+      "生产能力标签": [
+        {
+          "tag": "生产能力-未明确",
+          "source_field": "employee_scale",
+          "confidence": 0.0
+        }
+      ],
+      "资质能力标签": [
+        {
+          "tag": "资质能力-未明确",
+          "source_field": "specialized_enterprise",
+          "confidence": 0.0
+        }
+      ],
+      "资金实力标签": [
+        {
+          "tag": "中等注册资本",
+          "source_field": "registered_capital",
+          "confidence": 0.9
+        }
+      ]
+    }
+  },
+  "uncertain_tags": [
+    {
+      "tag_category": "产品标签",
+      "sub_category": "产品规格标签",
+      "reason": "product_spec字段为空"
+    },
+    {
+      "tag_category": "产品标签",
+      "sub_category": "产品应用场景",
+      "reason": "无法从合作企业或业务描述推断应用场景"
+    },
+    {
+      "tag_category": "产品标签",
+      "sub_category": "产品合规标签",
+      "reason": "industry_cert字段为空"
+    },
+    {
+      "tag_category": "服务标签",
+      "sub_category": "核心服务类型",
+      "reason": "business_scope字段无法提取服务类型"
+    },
+    {
+      "tag_category": "服务标签",
+      "sub_category": "增值服务标签",
+      "reason": "business_scope字段无法提取增值服务"
+    },
+    {
+      "tag_category": "能力标签",
+      "sub_category": "技术能力标签",
+      "reason": "patent_count字段为空"
+    },
+    {
+      "tag_category": "能力标签",
+      "sub_category": "技术能力标签",
+      "reason": "无法提取技术能力标签"
+    },
+    {
+      "tag_category": "能力标签",
+      "sub_category": "生产能力标签",
+      "reason": "employee_scale/investment_projects字段为空"
+    },
+    {
+      "tag_category": "能力标签",
+      "sub_category": "资质能力标签",
+      "reason": "specialized_enterprise/industry_cert字段为空"
+    }
+  ],
+  "note": "标签生成正常，核心标签基于模块2结构化字段；未明确标签9项：product_spec字段为空; 无法从合作企业或业务描述推断应用场景; industry_cert字段为空"
+}

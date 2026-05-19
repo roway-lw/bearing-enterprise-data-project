@@ -1,0 +1,57 @@
+{
+  "enterprise_name": "河北宝瑞明轴承制造有限公司",
+  "extract_time": "2026-05-17 14:04:18",
+  "summary": {
+    "total_records": 2,
+    "bidding_records": 2
+  },
+  "records": [
+    {
+      "record_type": "bidding",
+      "source_url": "",
+      "source_platform": "工商查询平台",
+      "source_snippet": "2025-05-12 在2024年的纳税人信用级别为A查看动态 天眼图谱工商信息股东信息2主要人员3对外投资0控制企业0变更记录21分支机构0财务数据企业年报8企业公示0最终受益人2实际控制人1协同股东0疑似关系118同行分析 Hebei Baoruiming Bearing Manufacturing Co., Ltd.（自动翻译） 轴承及轴承配件的制造及进出口业务（依法须经批准的项目，经相关部",
+      "project_name": "依法须经批准的项目",
+      "bid_type": "招标",
+      "counterparty": "北京金堤科技有限公司",
+      "counterparty_industry": "",
+      "amount": "",
+      "amount_unit": "",
+      "amount_raw": "",
+      "currency": "人民币",
+      "bid_date": "2025-05-12",
+      "products": "轴承",
+      "region": "北京市",
+      "role": "中标方",
+      "confidence": 0.73,
+      "record_id": "BID-001"
+    },
+    {
+      "record_type": "bidding",
+      "source_url": "",
+      "source_platform": "招投标平台",
+      "source_snippet": "财政部唯一指定政府采购信息网络发布媒体 国家级政府采购专业网站 服务热线：400-810-1996 &nbsp; | &nbsp; 服务投诉：010-63819289 关键字： 河北宝瑞明轴承制造有限公司 标题检索 共找到 0 条内容 查询日期从 2026-05-10 到 2026-05-17 主办单位：中华人民共和国财政部国库司 网站标识码：bm14000002 &nbsp;|&nbsp; 京I",
+      "project_name": "",
+      "bid_type": "中标",
+      "counterparty": "北宝瑞明轴承制造有限公司",
+      "counterparty_industry": "",
+      "amount": "",
+      "amount_unit": "",
+      "amount_raw": "",
+      "currency": "人民币",
+      "bid_date": "2026-05-10",
+      "products": "轴承",
+      "region": "北京市",
+      "role": "中标方",
+      "confidence": 0.7,
+      "record_id": "BID-002"
+    }
+  ],
+  "source_coverage": {
+    "official_website": false,
+    "business_info": true,
+    "bidding_info": true,
+    "patent_info": true
+  },
+  "extraction_confidence": 0.71
+}

@@ -1,0 +1,3132 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-15T18:37:30.395172",
+  "generated_by": "bearing-data-source-filter",
+  "industry": "轴承",
+  "description": "基于自动化评价生成的数据源配置，供 bearing-enterprise-data-crawl 消费",
+  "update_policy": {
+    "seed_list_source": "references/bearing_industry_sites.md",
+    "evaluation_trigger": "manual_or_scheduled",
+    "auto_promote_threshold": 70,
+    "last_evaluation": "2026-05-15T18:37:30.395189"
+  },
+  "sources": [
+    {
+      "id": "北京市公共资源交易服务平台",
+      "name": "北京市公共资源交易服务平台",
+      "category": "招投标平台",
+      "base_url": "https://ggzyfw.beijing.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 1,
+      "enabled": true,
+      "authority_score": 1.0,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 86.3,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "天眼查商业查询平台企业信息查询公司查询工商查询企业信用信息系",
+      "name": "天眼查-商业查询平台_企业信息查询_公司查询_工商查询_企业信用信息系统",
+      "category": "工商查询",
+      "base_url": "https://www.tianyancha.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 83.2,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "首页上海证券交易所",
+      "name": "首页 | 上海证券交易所",
+      "category": "上市公司",
+      "base_url": "https://www.sse.com.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 82.9,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "采招网招标网招标公告工程招标采购信息",
+      "name": "采招网--招标网|招标公告|工程招标采购信息",
+      "category": "招投标平台",
+      "base_url": "https://www.bidcenter.com.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 82.6,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "采购与招标网招标信息发布中国采购与招标网大数据平台",
+      "name": "采购与招标网-招标信息发布-中国采购与招标网大数据平台",
+      "category": "招投标平台",
+      "base_url": "https://www.chinabidding.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 81.8,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "浙江省公共资源交易服务平台系统",
+      "name": "浙江省公共资源交易服务平台系统",
+      "category": "招投标平台",
+      "base_url": "https://ggzy.zj.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 1.0,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 80.6,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "企查查查企业查老板查风险企业信息查询系统",
+      "name": "企查查 - 查企业_查老板_查风险_企业信息查询系统",
+      "category": "工商查询",
+      "base_url": "https://www.qcc.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 79.3,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "中国政府采购网",
+      "name": "中国政府采购网",
+      "category": "招投标平台",
+      "base_url": "https://www.ccgp.gov.cn",
+      "search_url_template": "http://search.ccgp.gov.cn/bxsearch?searchtype=1&bidSort=0&pinMu=0&bidType=1&dbselect=bidx&kw={name}",
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 1.0,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 79.2,
+      "notes": "企业信息丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "海关数据上海腾道进出口数据找国外客户外贸找客户外贸软件外贸平",
+      "name": "海关数据_上海腾道_进出口数据_找国外客户_外贸找客户_外贸软件_外贸平台_上海腾道信息技术有限公司官方网站",
+      "category": "海关数据",
+      "base_url": "https://www.tendata.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 79.0,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "工业关节里的硬核突围老企业洛轴创新蝶变启示录科普中国人民网",
+      "name": "工业“关节”里的硬核突围——老企业洛轴创新蝶变启示录--科普中国--人民网",
+      "category": "B2B平台",
+      "base_url": "https://kpzg.people.com.cn/n1/2025/0610/c404214-40497398.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 78.9,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "中国机械工业联合会机经网",
+      "name": "中国机械工业联合会机经网",
+      "category": "行业媒体",
+      "base_url": "https://www.mei.net.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 78.6,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "中国机械工业联合会机经网_1",
+      "name": "中国机械工业联合会机经网",
+      "category": "行业协会",
+      "base_url": "https://www.cmif.org.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 78.3,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "上海公共资源交易平台",
+      "name": "上海公共资源交易平台",
+      "category": "招投标平台",
+      "base_url": "https://www.shggzy.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 78.2,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "猎聘招聘找工作求职企业招人平台",
+      "name": "【猎聘】-招聘_找工作_求职_企业招人平台",
+      "category": "招聘平台",
+      "base_url": "https://www.liepin.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 78.1,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "洛轴集团党委书记董事长王新莹挺起民族轴承工业的脊梁",
+      "name": "洛轴集团党委书记、董事长王新莹：挺起民族轴承工业的脊梁",
+      "category": "B2B平台",
+      "base_url": "https://www.miit.gov.cn/ztzl/rdzt/xxgyhqk/tjyd/tssj/art/2026/art_f0982003042643c5befecaabbc21e595.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.8,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 78.0,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "全国公共资源交易平台",
+      "name": "全国公共资源交易平台",
+      "category": "招投标平台",
+      "base_url": "https://www.ggzy.gov.cn",
+      "search_url_template": "https://deal.ggzy.gov.cn/ds/deal/dealList.jsp?search={name}",
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 1.0,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 77.5,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "深交所主页",
+      "name": "深交所主页",
+      "category": "上市公司",
+      "base_url": "https://www.szse.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 77.3,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "华新建材招标timken轴承招选项目开启明确招选流程与要求新",
+      "name": "华新建材招标：TIMKEN轴承招选项目开启 明确招选流程与要求_新浪财经_新浪网",
+      "category": "B2B平台",
+      "base_url": "http://finance.sina.com.cn/stock/aigc/zab/2026-05-14/doc-inhxvihv4092404.shtml",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 77.3,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "2025年中国微型轴承行业发展现状及趋势分析应用场景逐步拓宽",
+      "name": "2025年中国微型轴承行业发展现状及趋势分析，应用场景逐步拓宽，产品定制化、生产柔性化程度逐步提升「图」_华经情报网_华经产业研究院",
+      "category": "B2B平台",
+      "base_url": "https://www.huaon.com/channel/trend/1078249.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 77.2,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "预见20242024年中国轴承制造行业市场规模竞争格局及发展",
+      "name": "预见2024：2024年中国轴承制造行业市场规模、竞争格局及发展趋势分析 高端产品市场潜力增大_前瞻趋势 - 前瞻产业研究院",
+      "category": "B2B平台",
+      "base_url": "https://bg.qianzhan.com/trends/detail/506/240226-4da6cbe6.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 77.0,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "陌贝网轴承型号查询进口轴承一站式轴承交易平台",
+      "name": "陌贝网-轴承型号查询_进口轴承_一站式轴承交易平台",
+      "category": "B2B平台",
+      "base_url": "http://www.mrobay.com/",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 76.9,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "首页全国中小企业股份转让系统",
+      "name": "首页 - 全国中小企业股份转让系统",
+      "category": "上市公司",
+      "base_url": "https://www.neeq.com.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 76.7,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "首页中国工业新闻网",
+      "name": "首页 - 中国工业新闻网",
+      "category": "行业媒体",
+      "base_url": "https://www.cinn.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 76.6,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "洛轴关于特大型事业部新购6台便携手持式气动打标机的招标公告挺",
+      "name": "洛轴关于特大型事业部新购6台便携手持式气动打标机的招标公告:挺起民族轴承工业的脊梁",
+      "category": "B2B平台",
+      "base_url": "https://www.lyc.cn/12558_30.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 76.0,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "顺企网企业黄页和供求信息发布平台",
+      "name": "【顺企网】企业黄页和供求信息发布平台",
+      "category": "企业名录",
+      "base_url": "https://www.11467.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 75.9,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "2026年常州滚针轴承行业制造力前瞻与高承载性能厂商咸宁新闻",
+      "name": "2026年常州滚针轴承行业制造力前瞻与高承载性能厂商 - 咸宁新闻网",
+      "category": "行业媒体",
+      "base_url": "http://news.xnnews.com.cn/shangxun/202605/t20260509_4586362.shtml",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 75.6,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "2023年中国轴承行业深度研究报告华经产业研究院发布机械工程",
+      "name": "《2023年中国轴承行业深度研究报告》-华经产业研究院发布|机械|工程机械|万向钱潮|企业经营|所属行业_手机新浪网",
+      "category": "B2B平台",
+      "base_url": "https://finance.sina.cn/2023-08-18/detail-imzhqvmf7461081.d.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 75.4,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "2026轴承行业被重新定义的工业关节谁能抓住下一轮增长",
+      "name": "2026轴承行业：被重新定义的 “工业关节”，谁能抓住下一轮增长？",
+      "category": "B2B平台",
+      "base_url": "https://m.300.cn/news/zwz/41354.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 75.4,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "启信宝企业查询企业信用信息平台",
+      "name": "启信宝-企业查询_企业信用信息平台",
+      "category": "工商查询",
+      "base_url": "https://www.qixin.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 74.8,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "36氪让一部分人先看到未来",
+      "name": "36氪_让一部分人先看到未来",
+      "category": "数据服务",
+      "base_url": "https://www.36kr.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 74.5,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "机电之家机电行业b2b平台让机电企业在行业中脱颖而出",
+      "name": "机电之家-机电行业b2b平台-让机电企业在行业中脱颖而出",
+      "category": "B2B平台",
+      "base_url": "https://www.jdzj.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 74.3,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "中国指数网",
+      "name": "中国指数网",
+      "category": "B2B平台",
+      "base_url": "https://www.idx365.com/statisticalMuseum/cont16464.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 74.0,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "2026轴承行业市场深度调研及未来潜力分析中研普华中研网",
+      "name": "2026轴承行业市场深度调研及未来潜力分析_中研普华_中研网",
+      "category": "B2B平台",
+      "base_url": "https://www.chinairn.com/hyzx/20260225/175042161.shtml",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 73.5,
+      "notes": "商业关系丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "机床网数控机床网机床商务网机床行业门户网站",
+      "name": "机床网-数控机床网-机床商务网-机床行业门户网站",
+      "category": "轴承装备",
+      "base_url": "https://www.jc35.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 73.4,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "华轴网轴承轴承网滚动轴承华轴网专业的轴承型号查询网站",
+      "name": "华轴网-轴承,轴承网,滚动轴承,华轴网-专业的轴承型号查询网站",
+      "category": "B2B平台",
+      "base_url": "https://www.zcwz.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 72.8,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "天津数贸",
+      "name": "天津数贸",
+      "category": "轴承钢材料",
+      "base_url": "https://www.cstsa.org.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.2,
+      "overall_score": 72.7,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "易之家贸易大数据sns精准营销平台外贸大数据海关数据进出口数",
+      "name": "易之家-贸易大数据SNS精准营销平台-外贸大数据-海关数据-进出口数据",
+      "category": "海关数据",
+      "base_url": "https://www.tradesns.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 71.7,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "马可波罗网主站",
+      "name": "马可波罗网主站",
+      "category": "B2B平台",
+      "base_url": "https://www.makepolo.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 71.6,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "以质铸芯以技领航中国质量新闻网",
+      "name": "以质铸芯 以技领航-中国质量新闻网",
+      "category": "企业名录",
+      "base_url": "https://www.cqn.com.cn/zgzlb/content/2026-05/12/content_9156045.htm",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 71.6,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "中国通用机械工业协会5a级协会通用机械设备重大技术装备流体机",
+      "name": "中国通用机械工业协会-5A级协会-通用机械设备-重大技术装备-流体机械展会",
+      "category": "行业媒体",
+      "base_url": "https://www.cgmia.org.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.2,
+      "overall_score": 70.9,
+      "notes": "商业关系丰富，企业信息丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "深圳公共资源交易中心",
+      "name": "深圳公共资源交易中心",
+      "category": "招投标平台",
+      "base_url": "https://www.szggzy.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 70.8,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "中国轴承企业数据库创业amp资本",
+      "name": "中国轴承_企业数据库_创业&amp;资本",
+      "category": "综合平台",
+      "base_url": "https://www.qianzhan.com/investment/invdetail/5/22096.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 70.2,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "前洛阳轴承厂创业板ipo下周上会迎考",
+      "name": "前洛阳轴承厂创业板IPO，下周上会迎考！",
+      "category": "行业媒体",
+      "base_url": "http://news.10jqka.com.cn/20260514/c676696931.shtml",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 70.2,
+      "notes": "商业关系丰富，行业相关性强"
+    },
+    {
+      "id": "2026年国内ook轴承经销商值得关注企业梳理采购服务产品",
+      "name": "2026年国内OOK轴承经销商值得关注企业梳理_采购_服务_产品",
+      "category": "行业媒体",
+      "base_url": "https://news.sohu.com/a/1022240500_122643009",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 2,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 70.0,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "轴聘网专注轴承招聘18年品牌网站",
+      "name": "轴聘网_专注轴承招聘18年品牌网站",
+      "category": "B2B平台",
+      "base_url": "https://www.zcjob88.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 68.9,
+      "notes": "企业信息丰富，行业相关性强，成功率50%，反爬严格"
+    },
+    {
+      "id": "国家知识产权局",
+      "name": "国家知识产权局",
+      "category": "专利平台",
+      "base_url": "https://www.cnipa.gov.cn",
+      "search_url_template": "https://pss-system.cponline.cnipa.gov.cn/conventionalSearch?searchType=patent&keyword={name}",
+      "search_keywords_template": [
+        "{name} 专利",
+        "{name} 经营范围",
+        "{name} 股东",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 外观设计",
+        "{name} 知识产权",
+        "{name} 发明专利",
+        "{name} 实用新型"
+      ],
+      "data_types": [
+        "patent_info"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.8,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 68.2,
+      "notes": "企业信息丰富，行业相关性强，反爬严格"
+    },
+    {
+      "id": "中国轴承齿轮传动制造企业名录875849太子河开发区招商网中",
+      "name": "中国轴承齿轮传动制造企业名录8758—49-太子河开发区招商网-中国招商引资信息网",
+      "category": "企业名录",
+      "base_url": "http://www.cnzsyz.com/liaoning/info/432194.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 67.5,
+      "notes": "企业信息丰富，行业相关性强"
+    },
+    {
+      "id": "轴承型号查询轴承型号查询网轴承型号大全轴承新旧型号对照型号查",
+      "name": "轴承型号查询,轴承型号查询网,轴承型号大全,轴承新旧型号对照－型号查询",
+      "category": "综合平台",
+      "base_url": "https://c.zcwz.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 67.4,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "中国国际招标网机电产品国际招标行政监督和公共服务平台",
+      "name": "中国国际招标网-机电产品国际招标行政监督和公共服务平台",
+      "category": "招投标平台",
+      "base_url": "http://chinabidding.mofcom.gov.cn/bidDetail/bidding/bulletin/202605/ff8080819a82040b019e14ad51447fe2.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 1.0,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 67.0,
+      "notes": "行业相关性强，反爬严格"
+    },
+    {
+      "id": "巨潮资讯网",
+      "name": "巨潮资讯网",
+      "category": "上市公司",
+      "base_url": "https://www.cninfo.com.cn",
+      "search_url_template": "http://www.cninfo.com.cn/new/information/topSearch/query?keyWord={name}",
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 66.7,
+      "notes": "商业关系丰富"
+    },
+    {
+      "id": "金属加工冷加工",
+      "name": "金属加工（冷加工）",
+      "category": "行业媒体",
+      "base_url": "https://www.mw1950.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 66.2,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "nsk中国官网恩斯克投资有限公司官方网站",
+      "name": "NSK中国官网-恩斯克投资有限公司官方网站",
+      "category": "滚动轴承专业",
+      "base_url": "https://www.nsk.com.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 65.6,
+      "notes": "常规网站"
+    },
+    {
+      "id": "中国执行信息公开网",
+      "name": "中国执行信息公开网",
+      "category": "司法信息",
+      "base_url": "https://zxgk.court.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.8,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 65.5,
+      "notes": "常规网站"
+    },
+    {
+      "id": "国家知识产权局商标局中国商标网",
+      "name": "国家知识产权局商标局 中国商标网",
+      "category": "专利平台",
+      "base_url": "https://sbj.cnipa.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 专利",
+        "{name} 经营范围",
+        "{name} 股东",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 外观设计",
+        "{name} 知识产权",
+        "{name} 发明专利",
+        "{name} 实用新型"
+      ],
+      "data_types": [
+        "patent_info"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.8,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 65.1,
+      "notes": "常规网站"
+    },
+    {
+      "id": "2025年中国滑动轴承行业深度研究报告市场需求预测进入壁垒及",
+      "name": "2025年中国滑动轴承行业深度研究报告：市场需求预测、进入壁垒及投资风险_财富号_东方财富网",
+      "category": "B2B平台",
+      "base_url": "https://caifuhao.eastmoney.com/news/20250626133525741144460",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 64.9,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "上银科技中国有限公司",
+      "name": "上银科技(中国)有限公司",
+      "category": "直线运动专业",
+      "base_url": "https://www.hiwin.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 64.8,
+      "notes": "企业信息丰富"
+    },
+    {
+      "id": "中国采购与招标网",
+      "name": "中国采购与招标网",
+      "category": "招投标平台",
+      "base_url": "https://www.chinabidding.com.cn",
+      "search_url_template": "https://www.chinabidding.cn/search/searchzbgg?keyword={name}",
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 63.3,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "中国人民银行征信中心",
+      "name": "中国人民银行征信中心",
+      "category": "征信平台",
+      "base_url": "https://www.pbccrc.org.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 63.1,
+      "notes": "企业信息丰富"
+    },
+    {
+      "id": "中国机械工程学会",
+      "name": "中国机械工程学会",
+      "category": "行业协会",
+      "base_url": "https://www.cmes.org",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 63.0,
+      "notes": "常规网站"
+    },
+    {
+      "id": "关于我们华承云中国轴承行业工业互联网平台",
+      "name": "关于我们－华承云－中国轴承行业工业互联网平台",
+      "category": "行业媒体",
+      "base_url": "https://www.bearingcloud.cn/about.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 62.9,
+      "notes": "行业相关性强，反爬严格"
+    },
+    {
+      "id": "首页",
+      "name": "首页",
+      "category": "司法信息",
+      "base_url": "https://wenshu.court.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.8,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 62.7,
+      "notes": "常规网站"
+    },
+    {
+      "id": "it桔子泛互联网创业投资项目信息数据库及商业信息服务商",
+      "name": "IT桔子 | 泛互联网创业投资项目信息数据库及商业信息服务商",
+      "category": "数据服务",
+      "base_url": "https://www.itjuzi.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 62.1,
+      "notes": "商业关系丰富，行业相关性强，成功率50%，反爬严格"
+    },
+    {
+      "id": "中国庭审公开网",
+      "name": "中国庭审公开网",
+      "category": "司法信息",
+      "base_url": "https://tingshen.court.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.7,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 61.8,
+      "notes": "反爬严格"
+    },
+    {
+      "id": "上海质量体系审核中心",
+      "name": "上海质量体系审核中心",
+      "category": "行业协会",
+      "base_url": "https://www.sac.org.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 61.3,
+      "notes": "常规网站"
+    },
+    {
+      "id": "赛迪顾问思维创造世界",
+      "name": "赛迪顾问-思维创造世界",
+      "category": "产业研究",
+      "base_url": "https://www.ccidconsulting.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 59.9,
+      "notes": "常规网站"
+    },
+    {
+      "id": "清科研究中心创投圈智库与领先的综合服务提供商",
+      "name": "清科研究中心_创投圈智库与领先的综合服务提供商",
+      "category": "数据服务",
+      "base_url": "https://www.pedata.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 59.9,
+      "notes": "常规网站"
+    },
+    {
+      "id": "madeinchinacommanufacturerssup",
+      "name": "Made-in-China.com - Manufacturers, Suppliers &amp; Products in China",
+      "category": "B2B平台",
+      "base_url": "https://www.made-in-china.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 59.8,
+      "notes": "常规网站"
+    },
+    {
+      "id": "中国机床工具工业协会",
+      "name": "中国机床工具工业协会",
+      "category": "轴承装备",
+      "base_url": "https://www.cmtba.org.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 59.4,
+      "notes": "行业相关性强，反爬严格"
+    },
+    {
+      "id": "搜狐",
+      "name": "搜狐",
+      "category": "B2B平台",
+      "base_url": "https://www.sohu.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 59.1,
+      "notes": "常规网站"
+    },
+    {
+      "id": "融360",
+      "name": "融360",
+      "category": "征信平台",
+      "base_url": "https://www.rong360.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 58.8,
+      "notes": "常规网站"
+    },
+    {
+      "id": "萝卜投研智能股票投研选股基本面分析选股研究投研看研报",
+      "name": "萝卜投研-智能股票投研|选股_基本面分析|选股|研究|投研_看研报",
+      "category": "数据服务",
+      "base_url": "https://robo.datayes.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 58.3,
+      "notes": "常规网站"
+    },
+    {
+      "id": "360社区360粉丝大本营是360互联网安全软件360智能硬",
+      "name": "360社区-360粉丝大本营，是360互联网安全软件、360智能硬件，360OS用户互动交流社区平台",
+      "category": "综合平台",
+      "base_url": "https://bbs.360.cn/forum.php",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 57.7,
+      "notes": "常规网站"
+    },
+    {
+      "id": "360智慧商业无止境共生长",
+      "name": "360智慧商业－无止境共生长",
+      "category": "B2B平台",
+      "base_url": "https://e.360.cn/",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 56.4,
+      "notes": "常规网站"
+    },
+    {
+      "id": "中国工博会",
+      "name": "中国工博会",
+      "category": "行业展会",
+      "base_url": "https://www.ciif-expo.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 3,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 56.2,
+      "notes": "常规网站"
+    },
+    {
+      "id": "中彩网中彩网官网首页线上购彩官方保障",
+      "name": "中彩网 - 中彩网官网首页 - 线上购彩，官方保障",
+      "category": "B2B平台",
+      "base_url": "https://www.zcw168.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.6,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 54.7,
+      "notes": "常规网站"
+    },
+    {
+      "id": "万方数据知识服务平台科研学习全流程支持服务平台",
+      "name": "万方数据知识服务平台-科研学习全流程支持服务平台",
+      "category": "学术标准",
+      "base_url": "https://www.wanfangdata.com.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 54.6,
+      "notes": "行业相关性强"
+    },
+    {
+      "id": "轴承行业主要企业生产经营月快报排行",
+      "name": "轴承行业主要企业生产经营月快报排行",
+      "category": "行业媒体",
+      "base_url": "https://www.cbia.com.cn/index.php/Synthesize/dataSort/mark/D/dates/2022-4",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.5,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 54.3,
+      "notes": "常规网站"
+    },
+    {
+      "id": "自润滑轴承技术未来十年发展趋势智能化与可持续性格莱赛材料苏州",
+      "name": "自润滑轴承技术未来十年发展趋势：智能化与可持续性-格莱赛材料（苏州）有限公司",
+      "category": "综合平台",
+      "base_url": "https://www.glctech.cn/xwzx/6.html",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 53.8,
+      "notes": "常规网站"
+    },
+    {
+      "id": "首页全国标准信息公共服务平台",
+      "name": "首页 - 全国标准信息公共服务平台",
+      "category": "学术标准",
+      "base_url": "https://std.samr.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.8,
+      "crawl_friendly_score": 0.6,
+      "overall_score": 53.0,
+      "notes": "常规网站"
+    },
+    {
+      "id": "88完美邮箱新一代个人免费邮箱完美邮箱让沟通更正式更完美",
+      "name": "88完美邮箱-新一代个人免费邮箱-完美邮箱让沟通更正式更完美",
+      "category": "企业名录",
+      "base_url": "https://www.88.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 52.8,
+      "notes": "常规网站"
+    },
+    {
+      "id": "idcchinahome",
+      "name": "IDC - China - Home",
+      "category": "产业研究",
+      "base_url": "https://www.idc.com/cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 51.0,
+      "notes": "常规网站"
+    },
+    {
+      "id": "集邦咨询半导体led显示面板新能源等国际高科技产业研究机构",
+      "name": "集邦咨询-半导体、LED、显示面板、新能源等国际高科技产业研究机构",
+      "category": "产业研究",
+      "base_url": "https://www.trendforce.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.2,
+      "overall_score": 50.4,
+      "notes": "反爬严格"
+    },
+    {
+      "id": "ntn株式会社軸受精密機器商品等",
+      "name": "NTN株式会社｜ベアリング(軸受)、ドライブシャフト、精密機器商品等",
+      "category": "滚动轴承专业",
+      "base_url": "https://www.ntn.co.jp",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.5,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 50.0,
+      "notes": "常规网站"
+    },
+    {
+      "id": "soopat专利搜索",
+      "name": "SooPAT 专利搜索",
+      "category": "专利平台",
+      "base_url": "https://www.soopat.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 专利",
+        "{name} 经营范围",
+        "{name} 股东",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 外观设计",
+        "{name} 知识产权",
+        "{name} 发明专利",
+        "{name} 实用新型"
+      ],
+      "data_types": [
+        "patent_info"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 49.2,
+      "notes": "常规网站"
+    },
+    {
+      "id": "whitelabelerrorpage",
+      "name": "Whitelabel Error Page",
+      "category": "招投标平台",
+      "base_url": "https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 招标",
+        "{name} 合作",
+        "{name} 采购",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 中标",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 竞标",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "bidding_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.9,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 48.6,
+      "notes": "常规网站"
+    },
+    {
+      "id": "中国知网",
+      "name": "中国知网",
+      "category": "学术标准",
+      "base_url": "https://www.cnki.net",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.4,
+      "crawl_friendly_score": 0.1,
+      "overall_score": 48.2,
+      "notes": "行业相关性强，成功率50%，反爬严格"
+    },
+    {
+      "id": "ss360trescom",
+      "name": "ss.360tres.com",
+      "category": "综合平台",
+      "base_url": "https://ss.360tres.com/lib/jquery/183.js",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 48.2,
+      "notes": "常规网站"
+    },
+    {
+      "id": "skf集团主页skf",
+      "name": "SKF 集团主页 | SKF",
+      "category": "滚动轴承专业",
+      "base_url": "https://www.skf.com.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.5,
+      "crawl_friendly_score": 0.4,
+      "overall_score": 47.7,
+      "notes": "反爬严格"
+    },
+    {
+      "id": "企洞察免费企业查询查工商查老板查征信企业风险监控系统",
+      "name": "企洞察-免费企业查询_查工商_查老板_查征信_企业风险监控系统",
+      "category": "工商查询",
+      "base_url": "https://www.qidongcha.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 47.3,
+      "notes": "常规网站"
+    },
+    {
+      "id": "ss3360trescom",
+      "name": "ss3.360tres.com",
+      "category": "B2B平台",
+      "base_url": "https://ss3.360tres.com/ssl/63baf2a18f4d593f/result.css",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 47.0,
+      "notes": "常规网站"
+    },
+    {
+      "id": "搜狗搜索引擎上网从搜狗开始",
+      "name": "搜狗搜索引擎 - 上网从搜狗开始",
+      "category": "综合平台",
+      "base_url": "https://so.html5.qq.com/landingpage/page/redirect-page-pc",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.7,
+      "overall_score": 46.4,
+      "notes": "常规网站"
+    },
+    {
+      "id": "中国电子口岸",
+      "name": "中国电子口岸",
+      "category": "海关数据",
+      "base_url": "https://credit.customs.gov.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.7,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 45.8,
+      "notes": "常规网站"
+    },
+    {
+      "id": "企名片科技打造中国领先的科技创新服务平台",
+      "name": "企名片科技-打造中国领先的科技创新服务平台",
+      "category": "数据服务",
+      "base_url": "https://www.qimingpian.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 45.3,
+      "notes": "常规网站"
+    },
+    {
+      "id": "维普网",
+      "name": "维普网",
+      "category": "学术标准",
+      "base_url": "https://www.cqvip.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 43.5,
+      "notes": "常规网站"
+    },
+    {
+      "id": "验证码拦截",
+      "name": "验证码拦截",
+      "category": "B2B平台",
+      "base_url": "https://www.1688.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.5,
+      "crawl_friendly_score": 0.1,
+      "overall_score": 43.2,
+      "notes": "反爬严格"
+    },
+    {
+      "id": "登录360帐号中心",
+      "name": "登录-360帐号中心",
+      "category": "综合平台",
+      "base_url": "http://i.360.cn/login",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 42.5,
+      "notes": "常规网站"
+    },
+    {
+      "id": "ray",
+      "name": "Ray",
+      "category": "行业展会",
+      "base_url": "https://www.cmeexpo.com.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 41.6,
+      "notes": "常规网站"
+    },
+    {
+      "id": "滑动验证页面",
+      "name": "滑动验证页面",
+      "category": "招聘平台",
+      "base_url": "https://www.lagou.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.1,
+      "overall_score": 41.5,
+      "notes": "反爬严格"
+    },
+    {
+      "id": "360视频",
+      "name": "360视频",
+      "category": "综合平台",
+      "base_url": "http://tv.360kan.com/s",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": true,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 41.1,
+      "notes": "常规网站"
+    },
+    {
+      "id": "腾讯ima知识库问答",
+      "name": "腾讯ima - 知识库问答",
+      "category": "综合平台",
+      "base_url": "https://ima.qq.com/create/knowledge-base-seomedia",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": false,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 37.9,
+      "notes": "成功率50%"
+    },
+    {
+      "id": "notfound",
+      "name": "Not Found",
+      "category": "综合平台",
+      "base_url": "http://www.sozhou.com/",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": false,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 36.8,
+      "notes": "常规网站"
+    },
+    {
+      "id": "jdscncomisforsalehugedomains",
+      "name": "Jdscn.com is for sale | HugeDomains",
+      "category": "行业媒体",
+      "base_url": "https://www.jdscn.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户"
+      ],
+      "data_types": [
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": false,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.5,
+      "overall_score": 31.0,
+      "notes": "成功率50%"
+    },
+    {
+      "id": "globalbearingcom",
+      "name": "globalbearing.com",
+      "category": "B2B平台",
+      "base_url": "https://www.globalbearing.com",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": false,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.0,
+      "overall_score": 29.6,
+      "notes": "反爬严格"
+    },
+    {
+      "id": "forsalegodaddycom",
+      "name": "forsale.godaddy.com",
+      "category": "B2B平台",
+      "base_url": "https://www.zhoucheng.cn",
+      "search_url_template": null,
+      "search_keywords_template": [
+        "{name} 经营范围",
+        "{name} 合作",
+        "{name} 股东",
+        "{name} 供应商",
+        "{name} 股东信息",
+        "{name} 法人代表",
+        "{name} 注册资本",
+        "{name} 供应链",
+        "{name} 投资",
+        "{name} 客户",
+        "{name} 工商信息"
+      ],
+      "data_types": [
+        "business_info",
+        "commercial_relation"
+      ],
+      "priority": 4,
+      "enabled": false,
+      "authority_score": 0.3,
+      "crawl_friendly_score": 0.3,
+      "overall_score": 28.2,
+      "notes": "反爬严格"
+    }
+  ]
+}
